@@ -32,5 +32,9 @@ public class Principal {
         listaTarefas.removerTarefa(4);
         listaTarefas.exibirTarefas();
 
+        System.out.println("----------------------");
+        System.out.println("Busca uma tarefa");
+        listaTarefas.buscarTarefa("varrer");
+
     }
 }

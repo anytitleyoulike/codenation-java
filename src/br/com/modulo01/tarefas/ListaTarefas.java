@@ -32,9 +32,16 @@ public class ListaTarefas {
         }
     }
 
-//    public Tarefa buscarTarefa(String descricao) {
-//        if(descricao.equal)
-//    }
+    public Tarefa buscarTarefa(String descricao) {
+        for(Tarefa t : tarefas) {
+            if(descricao.equals(t.descricao)) {
+                return t;
+            }
+        }
+        System.out.println("tarefa nao encontrada");
+        return null;
+    }
+
 
     public void exibirTarefas() {
         for(Tarefa tarefa: tarefas) {
