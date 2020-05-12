@@ -8,6 +8,7 @@ public class ListaTarefas {
     public void adicionarTarefa(Tarefa tarefa) {
         if(tarefa != null && tarefa.obterTamanhoTarefa() < 20) {
             this.tarefas.add(tarefa);
+            
         } else {
             System.out.println("A tarefa é inválida");
         }
